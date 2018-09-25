@@ -2,6 +2,7 @@
 #define VIEWMODEL_H
 
 #include <QFileDialog>
+
 #include "message.h"
 #include "bmg.h"
 
@@ -18,6 +19,8 @@ public:
     ~Viewmodel();
 
     void LoadFile();
+
+    void AddMessage();
 };
 
 #endif // VIEWMODEL_H

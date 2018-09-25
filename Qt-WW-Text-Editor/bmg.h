@@ -8,6 +8,7 @@
 class Bmg {
 private:
     CArrayT<Message *> m_Messages;
+    uint16_t m_MaxMessageId;
 public:
     Bmg();
     ~Bmg();
@@ -16,6 +17,7 @@ public:
     void WriteBmgFile(bStream::CMemoryStream writer);
 
     Message * GetMessage(size_t index);
+    uint16_t GetIdForNewMessage();
 };
 
 #endif // BMG_H
