@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "viewmodel.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +19,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    Viewmodel * m_Viewmodel;
 };
 
 #endif // MAINWINDOW_H

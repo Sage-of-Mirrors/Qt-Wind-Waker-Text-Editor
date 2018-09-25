@@ -25,13 +25,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    bstream.cpp
 
 HEADERS += \
         mainwindow.h \
     message.h \
     box_enums.h \
-    item_enum.h
+    item_enum.h \
+    viewmodel.h \
+    array.h \
+    bstream.h \
+    streamutil.h \
+    bmg.h
 
 FORMS += \
         mainwindow.ui

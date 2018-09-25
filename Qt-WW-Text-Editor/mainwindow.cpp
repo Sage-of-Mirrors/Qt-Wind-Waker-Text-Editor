@@ -6,9 +6,12 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    m_Viewmodel = new Viewmodel();
 }
 
 MainWindow::~MainWindow()
 {
+    delete m_Viewmodel;
     delete ui;
 }
